@@ -1,2 +1,6 @@
 [alias]
-    lg = log --graph --oneline --decorate=full
+	lg = log --graph --oneline --decorate=full
+	st = status
+	b = branch
+	co = checkout
+
