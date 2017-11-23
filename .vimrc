@@ -1,6 +1,9 @@
 " ====== ファイル =======
+" vi 互換モードで動作させない。互換モードはいろいろ問題がある
+set nocompatible
 "文字コードをUFT-8に設定
 set fenc=utf-8
+set encoding=utf-8
 " バックアップファイルを作らない
 set nobackup
 " スワップファイルを作らない
@@ -9,6 +12,8 @@ set noswapfile
 set autoread
 " バッファが編集中でもその他のファイルを開けるように
 set hidden
+" ファイルタイプ検出及び各種プラグインを有効にする
+filetype plugin indent on
 
 " ====== 表示 =======
 " 行番号を表示
@@ -21,6 +26,8 @@ set cursorline
 set visualbell
 " 括弧入力時の対応する括弧を表示
 set showmatch
+" シンタックスハイライト
+syntax enable
 
 " ====== ステータスライン =======
 " ステータスラインを常に表示(0:表示しない、1:2つ以上ウィンドウがある時だけ表示)
@@ -56,6 +63,8 @@ nnoremap k gk
 set smartindent
 " コマンドラインの補完
 set wildmode=list:longest
+" BackSpace の挙動を変える
+set backspace=indent,eol,start
 
 " ====== tab =======
 " 不可視文字を可視化(タブが「▸-」と表示される)
