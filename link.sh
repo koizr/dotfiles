@@ -15,3 +15,4 @@ for f in .??*; do
 
     ln -snfv "$BASE_DIR"/"$f" ~/
 done
+
