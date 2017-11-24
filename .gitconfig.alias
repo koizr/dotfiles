@@ -1,7 +1,7 @@
 [alias]
-	lg = log --graph --oneline --decorate=full
-	s = status
-	b = branch
-	co = checkout
+    lg = log --graph --oneline --decorate=full
+    s = status
+    b = branch
+    co = checkout
     poh = push origin HEAD
 
