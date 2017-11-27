@@ -1,5 +1,5 @@
 # bash
-export PS1='\[\e[0;35m\][\u@\h \w]\$ \[\e[m\]'
+export PS1='\[\e[0;35m\][\u:\W]\$ \[\e[m\]'
 
 # alias
 alias ll='ls -la'
