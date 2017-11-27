@@ -1,3 +1,6 @@
+# bash
+export PS1='\[\e[0;35m\][\u@\h \w]\$ \[\e[m\]'
+
 # alias
 alias ll='ls -la'
 alias t='tree'
