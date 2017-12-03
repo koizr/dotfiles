@@ -8,7 +8,7 @@ alias tsc-es5='tsc --target es5 --module amd'
 alias clear-open-app='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user'
 
 # ruby
-export PATH=/usr/local/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
@@ -19,4 +19,5 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # node.js
-export PATH=$PATH:./node_modules/.bin
+export PATH="$PATH:./node_modules/.bin"
+
