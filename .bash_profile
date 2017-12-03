@@ -1,3 +1,7 @@
+# base
+BASE_PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH=$BASE_PATH
+
 # bash
 export PS1='\[\e[0;35m\][\u:\W]\$ \[\e[m\]'
 
