@@ -10,6 +10,7 @@ alias ll='ls -la'
 alias t='tree'
 alias tsc-es5='tsc --target es5 --module amd'
 alias clear-open-app='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user'
+alias brew="PATH=$BASE_PATH brew"
 
 # ruby
 export PATH="/usr/local/bin:$PATH"
