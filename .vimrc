@@ -89,8 +89,10 @@ set wrapscan
 set hlsearch
 " ESC連打で検索ハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+nmap <C-j><C-j> :nohlsearch<CR><Esc>
 
 " ====== キーリマップ ======
 " Esc を押しやすい Ctrl-J に割り当て
 imap <C-j> <Esc>
+nmap <C-j> <Esc>
 
