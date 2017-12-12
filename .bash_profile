@@ -6,7 +6,7 @@ export PATH=$BASE_PATH
 export PS1='\[\e[0;35m\][\u:\W]\$ \[\e[m\]'
 
 # alias
-alias ll='ls -la'
+alias ll='ls -laG'
 alias t='tree'
 alias tsc-es5='tsc --target es5 --module amd'
 alias clear-open-app='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user'
