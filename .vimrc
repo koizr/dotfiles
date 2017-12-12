@@ -95,4 +95,5 @@ nmap <C-j><C-j> :nohlsearch<CR><Esc>
 " Esc を押しやすい Ctrl-J に割り当て
 imap <C-j> <Esc>
 nmap <C-j> <Esc>
+vmap <C-j> <Esc>
 
