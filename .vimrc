@@ -75,6 +75,8 @@ set expandtab
 set tabstop=4
 " 行頭でのTab文字の表示幅
 set shiftwidth=4
+" タブの代わりにスペースを入れる
+set softtabstop=4
 
 " ====== 検索 =======
 " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
