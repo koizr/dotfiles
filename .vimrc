@@ -77,6 +77,8 @@ set expandtab
 set shiftwidth=4
 " タブキーを押した時に入力されるスペースの数
 set softtabstop=4
+" 可視化したタブの文字色を設定
+hi SpecialKey ctermfg=darkgray
 
 " ====== 検索 =======
 " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
