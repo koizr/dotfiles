@@ -71,11 +71,11 @@ set backspace=indent,eol,start
 set list listchars=tab:\▸\-
 " Tab文字を半角スペースにする
 set expandtab
-" 行頭以外のTab文字の表示幅（スペースいくつ分）
 set tabstop=4
-" 行頭でのTab文字の表示幅
+" タブを含んだファイルを開いた時に変換するスペースの数
+" 自動インデント時に入力されるスペースの数
 set shiftwidth=4
-" タブの代わりにスペースを入れる
+" タブキーを押した時に入力されるスペースの数
 set softtabstop=4
 
 " ====== 検索 =======
