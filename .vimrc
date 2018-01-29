@@ -67,8 +67,8 @@ set wildmode=list:longest
 set backspace=indent,eol,start
 
 " ====== tab =======
-" 不可視文字を可視化(タブが「▸-」と表示される)
-set list listchars=tab:\▸\-
+" 不可視文字を可視化(タブが「|_」と表示される)
+set list listchars=tab:\|\_
 " Tab文字を半角スペースにする
 set expandtab
 " タブを含んだファイルを開いた時に変換するスペースの数
