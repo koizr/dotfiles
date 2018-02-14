@@ -26,3 +26,6 @@ eval "$(pyenv virtualenv-init -)"
 # node.js
 export PATH="$PATH:./node_modules/.bin"
 
+# completion
+[ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
+
