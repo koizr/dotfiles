@@ -1,0 +1,17 @@
+# === 表示 ===
+# メインビューに表示するものを制御
+set main-view = date author id:width=7 commit-title:graph=yes,refs=yes
+
+# 水平分割したウィンドウの下画面サイズを % で指定
+set split-view-height = 80%
+
+# 差分の前後の表示行数を指定 
+set diff-context = 5
+
+# === キーバインド ===
+bind main F !git fetch --prune
+# 紛らわしいキーバインドを解除
+bind generic G none
+bind generic g move-first-line
+bind generic G move-last-line
+
