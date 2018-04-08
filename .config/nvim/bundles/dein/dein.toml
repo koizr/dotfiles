@@ -20,3 +20,11 @@ hook_add = 'source ~/.config/nvim/bundles/vim-airline/settings.vim'
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
+# file tree
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+hook_add = 'source ~/.config/nvim/bundles/nerdtree/settings.vim'
+
