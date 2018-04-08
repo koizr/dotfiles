@@ -1,0 +1,14 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]] # completion
+repo = 'Shougo/deoplete.nvim'
+hook_add = 'let g:deoplete#enable_at_startup = 1'
+
+[[plugins]] # Syntax checker
+repo = 'w0rp/ale'
+hook_add = 'source ~/.config/nvim/bundles/ale/settings.vim'
+
+[[plugins]] # statusline plugin
+repo = 'itchyny/lightline.vim'
+

@@ -1,0 +1,8 @@
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+

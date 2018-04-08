@@ -30,3 +30,6 @@ export PATH="$PATH:./node_modules/.bin"
 # completion
 [ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
 
+# neovim
+export XDG_CONFIG_HOME='~/.config'
+
