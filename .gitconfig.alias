@@ -4,4 +4,5 @@
     b = branch
     co = checkout
     poh = push origin HEAD
+    f = fetch --prune
 
