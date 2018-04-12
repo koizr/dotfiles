@@ -12,6 +12,8 @@ alias tsc-es5='tsc --target es5 --module amd'
 alias clear-open-app='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user'
 alias brew="PATH=$BASE_PATH brew"
 alias clear-dns-cache='sudo killall -HUP mDNSResponder'
+alias vi='vim'
+alias vim='nvim'
 
 # ruby
 export PATH="/usr/local/bin:$PATH"
