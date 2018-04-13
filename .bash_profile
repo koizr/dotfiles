@@ -14,6 +14,7 @@ alias brew="PATH=$BASE_PATH brew"
 alias clear-dns-cache='sudo killall -HUP mDNSResponder'
 alias vi='vim'
 alias vim='nvim'
+alias ta='tmux a -t'
 
 # ruby
 export PATH="/usr/local/bin:$PATH"
