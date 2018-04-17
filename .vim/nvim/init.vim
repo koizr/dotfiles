@@ -96,4 +96,7 @@ nmap <C-j><C-j> :nohlsearch<CR><Esc>
 imap <C-j> <Esc>
 nmap <C-j> <Esc>
 vmap <C-j> <Esc>
+" バッファ関連
+nmap <C-n> :bn<CR>
+nmap <C-p> :bp<CR>
 
