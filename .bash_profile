@@ -4,6 +4,8 @@ export PATH=$BASE_PATH
 
 # bash
 export PS1='\[\e[0;35m\][\u:\W]\$ \[\e[m\]'
+bind '"\C-f": forward-word'
+bind '"\C-b": backward-word'
 
 # alias
 alias ll='ls -laG'
