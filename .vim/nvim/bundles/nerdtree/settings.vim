@@ -11,3 +11,6 @@ let g:NERDTreeIndicatorMapCustom = {
             \ "Unknown"   : "?"
             \ }
 
+" open & close
+map <C-q> :NERDTreeToggle<CR>
+
