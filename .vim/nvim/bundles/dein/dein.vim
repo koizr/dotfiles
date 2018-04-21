@@ -9,6 +9,11 @@ set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 let s:dein_dir = expand('~/.cache/dein')
 
 if dein#load_state(s:dein_dir)
+    " プラグインのキャッシュを削除する。設定ファイルの設定等が変わったときには clear するように
+    "call dein#clear_state()
+    " プラグインアップデート
+    "call dein#update()
+
     call dein#begin(s:dein_dir)
 
     let g:config_dir = expand('~/.vim/nvim/bundles/dein')
