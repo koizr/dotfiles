@@ -2,7 +2,9 @@
 let g:airline_powerline_fonts = 1
 
 " theme
-let g:airline_theme = 'badwolf'
+if !exists('g:airline_theme')
+    let g:airline_theme = 'badwolf'
+endif
 
 " cool tab bar
 let g:airline#extensions#tabline#enabled = 1
