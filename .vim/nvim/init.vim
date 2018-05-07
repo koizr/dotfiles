@@ -65,10 +65,10 @@ set backspace=indent,eol,start
 " ====== tab =======
 " 不可視文字を可視化(タブが「|_」と表示される)
 set list listchars=tab:\|\_
-" Tab文字を半角スペースにする
+" Tab文字を入力した時に半角スペースにする
 set expandtab
-" タブを含んだファイルを開いた時に変換するスペースの数
-"set tabstop=4
+" タブを含んだファイルを開いた時に表示するスペースの数
+set tabstop=4
 " 自動インデント時に入力されるスペースの数
 set shiftwidth=4
 " タブキーを押した時に入力されるスペースの数
