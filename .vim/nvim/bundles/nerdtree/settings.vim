@@ -12,5 +12,5 @@ let g:NERDTreeIndicatorMapCustom = {
             \ }
 
 " open & close
-map <C-q> :NERDTreeToggle<CR>
+map <silent><C-q> :NERDTreeToggle<CR>
 
