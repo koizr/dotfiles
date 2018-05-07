@@ -100,3 +100,6 @@ vmap <C-j> <Esc>
 nmap <C-n> :bn<CR>
 nmap <C-p> :bp<CR>
 
+" ====== シンタックス ======
+autocmd BufRead,BufNewFile *.volt setfiletype twig
+

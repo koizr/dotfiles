@@ -33,3 +33,6 @@ hook_add = 'source ~/.vim/nvim/bundles/nerdtree/settings.vim'
 repo = 'jacoborus/tender.vim'
 hook_add = 'source ~/.vim/nvim/bundles/colors/tender/settings.vim'
 
+[[plugins]]
+repo = 'nelsyeung/twig.vim'
+
