@@ -88,22 +88,22 @@ set wrapscan
 " 検索語をハイライト表示
 set hlsearch
 " ESC連打で検索ハイライト解除
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
-nmap <C-j><C-j> :nohlsearch<CR><Esc>
+nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
+nnoremap <C-j><C-j> :nohlsearch<CR><Esc>
 
 " ====== キーリマップ ======
 " Esc を押しやすい Ctrl-J に割り当て
-imap <C-j> <Esc>
-nmap <C-j> <Esc>
-vmap <C-j> <Esc>
+inoremap <C-j> <Esc>
+nnoremap <C-j> <Esc>
+vnoremap <C-j> <Esc>
 " バッファ関連
-nmap <C-n> :bn<CR>
-nmap <C-p> :bp<CR>
+nnoremap <C-n> :bn<CR>
+nnoremap <C-p> :bp<CR>
 " 移動しやすくする
-nmap <S-h> ^
-nmap <S-l> $
+nnoremap <S-h> ^
+nnoremap <S-l> $
 " フォーマットしやすくする
-nmap == gg= G''
+nnoremap == gg= G''
 
 " ====== シンタックス ======
 autocmd BufRead,BufNewFile *.volt setfiletype twig
