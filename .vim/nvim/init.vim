@@ -99,6 +99,11 @@ vmap <C-j> <Esc>
 " バッファ関連
 nmap <C-n> :bn<CR>
 nmap <C-p> :bp<CR>
+" 移動しやすくする
+nmap <S-h> ^
+nmap <S-l> $
+" フォーマットしやすくする
+nmap == gg= G''
 
 " ====== シンタックス ======
 autocmd BufRead,BufNewFile *.volt setfiletype twig
