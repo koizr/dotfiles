@@ -107,4 +107,5 @@ nnoremap == gg= G''
 
 " ====== シンタックス ======
 autocmd BufRead,BufNewFile *.volt setfiletype twig
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
