@@ -1,8 +1,13 @@
 [alias]
-    lg = log --graph --oneline --decorate=full
-    s = status
+    lg = log --graph --oneline --decorate=full --all
+    s = status --short --branch
     b = branch
     co = checkout
     poh = push origin HEAD
     f = fetch --prune
-
+    td = !git tag -l | xargs git tag -d && git fetch -t
+    d = diff
+    ds = diff --cached
+    df = diff --name-only
+    unstage = reset --soft HEAD
+    discard = reset --hard HEAD
