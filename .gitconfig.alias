@@ -9,5 +9,10 @@
     d = diff
     ds = diff --cached
     df = diff --name-only
+    g = grep --break --heading
+    gi = !git g -i
+    gw = !git gi -w
+    gs = !git g -F
+    gu = !git g --untracked
     unstage = reset --soft HEAD
     discard = reset --hard HEAD
