@@ -5,6 +5,8 @@
     co = checkout
     poh = push origin HEAD
     f = fetch --prune
+    amend = commit --amend
+    mod = commit --amend --no-edit
     td = !git tag -l | xargs git tag -d && git fetch -t
     d = diff
     ds = diff --cached
