@@ -3,6 +3,7 @@
     s = status --short --branch
     b = branch
     co = checkout
+    new = checkout -b
     poh = push origin HEAD
     f = fetch --prune
     amend = commit --amend
