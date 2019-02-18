@@ -1,0 +1,11 @@
+" search
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
+
+" statuline
+set laststatus=2
+set showcmd
+set statusline+=%m

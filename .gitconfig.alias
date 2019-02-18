@@ -1,4 +1,5 @@
 [alias]
+    alias = !git config --list | grep alias.
     lg = log --graph --oneline --decorate=full --all
     s = status --short --branch
     b = branch
@@ -8,6 +9,7 @@
     f = fetch --prune
     amend = commit --amend
     mod = commit --amend --no-edit
+    rename = branch -m
     td = !git tag -l | xargs git tag -d && git fetch -t
     d = diff
     ds = diff --cached

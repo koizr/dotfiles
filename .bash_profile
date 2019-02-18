@@ -16,6 +16,7 @@ alias brew="PATH=$BASE_PATH brew"
 alias vi='/usr/bin/vim'
 alias vim='nvim'
 alias ta='tmux a -t'
+alias cot='open -a CotEditor'
 
 # ruby
 export PATH="/usr/local/bin:$PATH"
