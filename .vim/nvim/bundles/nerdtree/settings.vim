@@ -10,6 +10,10 @@ let g:NERDTreeIndicatorMapCustom = {
             \ 'Ignored'   : '☒',
             \ "Unknown"   : "?"
             \ }
+" show hidden file
+let NERDTreeShowHidden = 1
+" ignore
+let g:NERDTreeIgnore=['\.DS_Store$', '\.git$', '\.svn$', '\~$']
 
 " open & close
 map <silent><C-q> :NERDTreeToggle<CR>

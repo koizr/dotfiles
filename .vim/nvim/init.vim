@@ -1,3 +1,5 @@
+" use python3
+let g:python3_host_prog = expand('/usr/local/bin/python3')
 " load dein
 runtime! bundles/dein/dein.vim
 
@@ -89,13 +91,8 @@ set wrapscan
 set hlsearch
 " ESC連打で検索ハイライト解除
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
-nnoremap <C-j><C-j> :nohlsearch<CR><Esc>
 
 " ====== キーリマップ ======
-" Esc を押しやすい Ctrl-J に割り当て
-inoremap <C-j> <Esc>
-nnoremap <C-j> <Esc>
-vnoremap <C-j> <Esc>
 " バッファ関連
 nnoremap <C-n> :bn<CR>
 nnoremap <C-p> :bp<CR>
