@@ -20,16 +20,19 @@ alias cot='open -a CotEditor'
 
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-# ruby
-export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # python
-PYENV_ROOT="$HOME/.pyenv"
+## pipenv
+export PIPENV_VENV_IN_PROJECT=1
+eval "$(pipenv --completion)"
+## pyenv
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+
+# haskell
+export PATH="$PATH:~/.local/bin"
+eval "$(stack --bash-completion-script stack)"
 
 # node.js
 export PATH="$PATH:./node_modules/.bin"
@@ -39,4 +42,3 @@ export PATH="$PATH:./node_modules/.bin"
 
 # neovim
 export XDG_CONFIG_HOME='~/.vim'
-
