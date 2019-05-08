@@ -3,7 +3,8 @@
     lg = log --graph --oneline --decorate=full --all
     s = status --short --branch
     b = branch
-    co = checkout
+    bd = !git branch -d $(git branch | fzf)
+    co = !git checkout $(git branch | fzf)
     new = checkout -b
     poh = push origin HEAD
     f = fetch --prune

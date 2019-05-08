@@ -18,6 +18,8 @@ alias vim='nvim'
 alias ta='tmux a -t'
 alias cot='open -a CotEditor'
 
+# fzf
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 # ruby
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
