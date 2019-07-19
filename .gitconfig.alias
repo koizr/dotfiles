@@ -8,6 +8,7 @@
     new = checkout -b
     poh = push origin HEAD
     f = fetch --prune
+    p = pull --prune
     amend = commit --amend
     mod = commit --amend --no-edit
     rename = branch -m

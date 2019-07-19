@@ -8,8 +8,8 @@ nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 " 移動しやすくする
 nnoremap <S-h> ^
 nnoremap <S-l> $
-nnoremap <C-p> gt
-nnoremap <C-n> gT
+nnoremap <C-n> gt
+nnoremap <C-p> gT
 nnoremap <C-o> :action Back<CR>
 nnoremap <C-i> :action Forward<CR>
 " 次/前の変更箇所
