@@ -9,7 +9,10 @@ set split-view-height = 80%
 set diff-context = 5
 
 # === キーバインド ===
+## fetch
 bind main F !git fetch --prune
+## コミットハッシュをクリップボードへ
+bind main Y @sh -c "echo %(commit) | pbcopy"
 # 紛らわしいキーバインドを解除
 bind generic G none
 bind generic g move-first-line
