@@ -1,7 +1,7 @@
 export LANG="ja_JP.UTF-8"
 
 # base
-BASE_PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+BASE_PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 export PATH=$BASE_PATH
 
 # bash
