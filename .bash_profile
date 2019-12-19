@@ -17,6 +17,7 @@ alias vi='/usr/bin/vim'
 alias vim='nvim'
 alias ta='tmux a -t'
 alias cot='open -a CotEditor'
+alias vsc='open -a "Visual Studio Code"'
 alias gl='cd $(ghq root)/$(ghq list | fzf)'
 
 # fzf
@@ -33,6 +34,7 @@ eval "$(pyenv init -)"
 
 # haskell
 export PATH="$PATH:~/.local/bin"
+export PATH="$(stack path --compiler-bin):$PATH"
 eval "$(stack --bash-completion-script stack)"
 
 # node.js
