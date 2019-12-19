@@ -1,0 +1,75 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+  // WorkBench
+  "workbench.fontAliasing": "antialiased",
+  "workbench.tree.indent": 20,
+  // theme
+  "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "materialTheme.accent": "Teal",
+  "workbench.colorCustomizations": {
+    // status bar
+    "statusBar.foreground": "#5eb1ff",
+    "activityBar.foreground": "#5eb1ff"
+  },
+  // editor
+  "editor.renderControlCharacters": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.minimap.enabled": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.fontFamily": "'Fira Code', 'Ricty Powerline', Menlo, 'Osaka-Mono', Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  // vim
+  "vim.useCtrlKeys": true,
+  "vim.visualstar": true,
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<Esc>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    }
+  ],
+  // emmet
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // terminal
+  "terminal.integrated.fontFamily": "'Fira Code', 'Ricty Powerline', Menlo, 'Osaka-Mono', Monaco, 'Courier New', monospace",
+  "terminal.integrated.rendererType": "dom",
+  // spell
+  "cSpell.userWords": [
+    "csrf",
+    "hspec",
+    "koizumin",
+    "vuetify",
+    "vuex",
+    "xsrf"
+  ],
+  "japanese-proofreading.textlint.全角文字と半角文字の間": false,
+  // languages
+  // JavaScript
+  "npm.enableScriptExplorer": true,
+  // Elm
+  "[elm]": {
+    "editor.formatOnSave": true
+  },
+  // Markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "files.trimTrailingWhitespace": false,
+  },
+  // Haskell
+  "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie"
+}

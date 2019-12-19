@@ -16,3 +16,8 @@ for f in .??*; do
     ln -snfv "$BASE_DIR"/"$f" ~/
 done
 
+# VS Code
+VSCODE_DIR="$HOME/Library/Application Support/Code/User/"
+ln -snfv "$BASE_DIR"/vscode/settings.json "$VSCODE_DIR"
+ln -snfv "$BASE_DIR"/vscode/keybindings.json "$VSCODE_DIR"
+ln -snfv "$BASE_DIR"/vscode/snippets "$VSCODE_DIR"snippets
