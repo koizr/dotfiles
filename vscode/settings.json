@@ -30,6 +30,18 @@
   "vim.visualstar": true,
   "vim.hlsearch": true,
   "vim.useSystemClipboard": true,
+  "vim.debug.silent": true,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "asdfghjkl;weruioxcvm,.",
+  "vim.easymotionMarkerFontFamily": "Fira Code",
+  "vim.easymotionMarkerYOffset": 15,
+  "vim.easymotionMarkerFontSize": "14",
+  "vim.easymotionMarkerHeight": 16,
+  "vim.easymotionMarkerWidthPerChar": 10,
+  "vim.easymotionMarkerForegroundColorOneChar": "rgba(200, 0, 0, 1)",
+  "vim.easymotionMarkerForegroundColorTwoChar": "rgba(0, 50, 200, 1)",
+  "vim.easymotionMarkerBackgroundColor": "rgba(250, 250, 250, 0.8)",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -37,6 +49,16 @@
       ],
       "commands": [
         ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
       ]
     }
   ],
@@ -58,6 +80,7 @@
     "xsrf"
   ],
   "japanese-proofreading.textlint.全角文字と半角文字の間": false,
+  "japanese-proofreading.textlint.かっこ類と隣接する文字の間のスペースの有無": false,
   // languages
   // JavaScript
   "npm.enableScriptExplorer": true,

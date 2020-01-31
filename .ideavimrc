@@ -1,3 +1,10 @@
+" see: https://github.com/tpope/vim-surround
+set surround
+
+" see https://github.com/AlexPl292/IdeaVim-EasyMotion
+set easymotion
+let g:EasyMotion_override_acejump = 0
+
 " search
 set ignorecase
 set smartcase
@@ -34,5 +41,3 @@ set clipboard+=unnamed
 " x での削除はレジスタに保存しない
 nnoremap x "_x
 
-" see: https://github.com/tpope/vim-surround
-set surround

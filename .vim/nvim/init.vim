@@ -23,6 +23,7 @@ filetype plugin indent on
 " ====== 表示 =======
 " 行番号を表示
 set number
+set relativenumber
 " 現在の行を強調表示
 set cursorline
 " 現在の列を強調表示
