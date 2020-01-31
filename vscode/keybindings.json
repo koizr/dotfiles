@@ -50,5 +50,15 @@
     {
         "key": "cmd+; f",
         "command": "workbench.files.action.focusFilesExplorer",
-    }
+    },
+    {
+        "key": "cmd+i",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-markdown.extension.editing.toggleItalic",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
 ]

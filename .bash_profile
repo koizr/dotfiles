@@ -1,4 +1,5 @@
 export LANG="ja_JP.UTF-8"
+export EDITOR="nvim"
 
 # base
 BASE_PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
@@ -47,3 +48,7 @@ export PATH="$HOME/.nodebrew/current/bin:$PATH"
 
 # neovim
 export XDG_CONFIG_HOME='~/.vim'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/koizumi/.sdkman"
+[[ -s "/Users/koizumi/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/koizumi/.sdkman/bin/sdkman-init.sh"
