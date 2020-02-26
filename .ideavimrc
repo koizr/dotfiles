@@ -41,3 +41,5 @@ set clipboard+=unnamed
 " x での削除はレジスタに保存しない
 nnoremap x "_x
 
+" IDEA のいい感じに行をくっつけてくれるやつを vim の <S-j> の代わりに使う
+set ideajoin
