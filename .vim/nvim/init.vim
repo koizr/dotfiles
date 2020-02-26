@@ -107,3 +107,5 @@ nnoremap == gg= G''
 autocmd BufRead,BufNewFile *.volt setfiletype twig
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
+" ====== clipboard ======
+set clipboard+=unnamed
