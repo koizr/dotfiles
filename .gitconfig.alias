@@ -23,3 +23,6 @@
     gu = !git g --untracked
     unstage = reset --soft HEAD
     discard = reset --hard HEAD
+    pr = !gh pr list
+    prc = "!gh pr checkout $(gh pr list | fzf | sed -E \"s/^#([0-9]+).*/\\1/\")"
+
