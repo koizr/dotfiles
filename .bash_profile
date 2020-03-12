@@ -12,11 +12,10 @@ bind '"\C-b": backward-word'
 
 # alias
 alias ll='ls -laG'
-alias t='tree'
+alias t='tree -L $1'
 alias brew="PATH=$BASE_PATH brew"
 alias vi='/usr/bin/vim'
 alias vim='nvim'
-alias ta='tmux a -t'
 alias cot='open -a CotEditor'
 alias vsc='open -a "Visual Studio Code"'
 alias gl='cd $(ghq root)/$(ghq list | fzf)'
