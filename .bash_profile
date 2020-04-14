@@ -41,11 +41,6 @@ export PATH="$PATH:~/.local/bin"
 export PATH="$(stack path --compiler-bin):$PATH"
 eval "$(stack --bash-completion-script stack)"
 
-# node.js
-export PATH="$PATH:./node_modules/.bin"
-# nodebrew
-export PATH="$HOME/.nodebrew/current/bin:$PATH"
-
 # completion
 [ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
 

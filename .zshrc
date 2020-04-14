@@ -62,6 +62,10 @@ eval "$(pyenv init -)"
 # neovim
 export XDG_CONFIG_HOME='~/.vim'
 
+# node.js
+export PATH="~/.nodenv/shims:$PATH"
+eval "$(nodenv init -)"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/koizumi/.sdkman"
 [[ -s "/Users/koizumi/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/koizumi/.sdkman/bin/sdkman-init.sh"

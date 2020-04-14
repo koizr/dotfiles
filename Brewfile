@@ -43,7 +43,7 @@ brew "pipenv"
 
 # node
 brew "node"
-brew "nodebrew"
+brew "nodenv"
 brew "yarn", link: false
 
 # Ruby
