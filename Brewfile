@@ -1,6 +1,7 @@
 tap "homebrew/cask"
 tap "sanemat/font"
 tap "caskroom/fonts"
+tap "adoptopenjdk/openjdk"
 
 brew "bash-completion"
 brew "fzf"
@@ -51,9 +52,13 @@ brew "ruby"
 brew "ruby-build"
 brew "rbenv"
 
+# Scala
+brew "jenv"
+brew "sbt"
+cask "adoptopenjdk8"
+
 # Other languages
 brew "go"
-brew "sbt"
 
 # fonts
 brew "sanemat/font/ricty", args: ["with-powerline"]
