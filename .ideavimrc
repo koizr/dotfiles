@@ -13,8 +13,8 @@ set hlsearch
 nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 
 " 移動しやすくする
-nnoremap <S-h> ^
-nnoremap <S-l> $
+"nnoremap <S-h> ^
+"nnoremap <S-l> $
 nnoremap <C-n> gt
 nnoremap <C-p> gT
 nnoremap <C-o> :action Back<CR>
