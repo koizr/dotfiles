@@ -10,6 +10,8 @@ brew "tmuxinator"
 brew "tree"
 brew "wget"
 brew "gnupg"
+brew "gpg-agent"
+brew "pinentry-mac"
 brew "httpie"
 
 # Terminal
