@@ -102,6 +102,8 @@ nnoremap <S-h> ^
 nnoremap <S-l> $
 " フォーマットしやすくする
 nnoremap == gg= G''
+" x での削除はレジスタに保存しない
+nnoremap x "_x
 
 " ====== シンタックス ======
 autocmd BufRead,BufNewFile *.volt setfiletype twig

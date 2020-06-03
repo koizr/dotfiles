@@ -1,3 +1,7 @@
+" beep 音なし
+set visualbell
+set noerrorbells
+
 " see: https://github.com/tpope/vim-surround
 set surround
 

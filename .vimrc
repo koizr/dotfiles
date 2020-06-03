@@ -100,4 +100,5 @@ nmap <C-j><C-j> :nohlsearch<CR><Esc>
 imap <C-j> <Esc>
 nmap <C-j> <Esc>
 vmap <C-j> <Esc>
-
+" x での削除はレジスタに保存しない
+nnoremap x "_x
