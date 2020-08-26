@@ -11,6 +11,7 @@
     p = pull --prune
     amend = commit --amend
     mod = commit --amend --no-edit
+    wip = commit -m 'WIP'
     rename = branch -m
     td = !git tag -l | xargs git tag -d && git fetch -t
     d = diff
