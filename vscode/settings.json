@@ -34,9 +34,7 @@
   "vim.leader": "<space>",
   "vim.easymotion": true,
   "vim.easymotionKeys": "asdfghjkl;weruioxcvm,.",
-  "vim.easymotionMarkerFontFamily": "Fira Code",
   "vim.easymotionMarkerYOffset": 15,
-  "vim.easymotionMarkerFontSize": "14",
   "vim.easymotionMarkerHeight": 16,
   "vim.easymotionMarkerWidthPerChar": 10,
   "vim.easymotionMarkerForegroundColorOneChar": "rgba(200, 0, 0, 1)",
@@ -72,9 +70,10 @@
   "terminal.integrated.rendererType": "dom",
   // spell
   "cSpell.userWords": [
+    "circleci",
     "csrf",
     "hspec",
-    "koizumin",
+    "koizr",
     "vuetify",
     "vuex",
     "xsrf"
@@ -94,5 +93,17 @@
     "files.trimTrailingWhitespace": false,
   },
   // Haskell
-  "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie"
+  "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie",
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "vetur.format.defaultFormatter.ts": "none",
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "editor.fontSize": 13
 }
