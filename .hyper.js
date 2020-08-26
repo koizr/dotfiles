@@ -83,7 +83,7 @@ module.exports = {
       lightBlue: "#6A76FB",
       lightMagenta: "#FD7CFC",
       lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF"
+      lightWhite: "#FFFFFF",
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -114,8 +114,7 @@ module.exports = {
     copyOnSelect: false,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
-    defaultSSHApp: true
-
+    defaultSSHApp: true,
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
     // quickEdit: true,
@@ -137,7 +136,7 @@ module.exports = {
     // 'hyper-tabs-enhanced',
     "hyperterm-material",
     // 'hyperline',
-    "hyper-tab-icons"
+    "hyper-tab-icons",
   ],
 
   // in development, you can create a directory under
@@ -152,9 +151,8 @@ module.exports = {
 
   hyperStatusLine: {
     dirtyColor: "salmon",
-    aheadColor: "ivory"
-  }
-
+    aheadColor: "ivory",
+  },
   // hyperTabs: {
   //   tabIconsColored: true,
   //   closeAlign: 'right',
