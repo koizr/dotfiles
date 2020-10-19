@@ -105,5 +105,7 @@
   "vetur.format.defaultFormatter.ts": "none",
   "vetur.format.defaultFormatter.html": "none",
   "vetur.format.defaultFormatter.scss": "none",
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "gitlens.defaultDateShortFormat": "YYYY-MM-DD",
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mmZ"
 }
