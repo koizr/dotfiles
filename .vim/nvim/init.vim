@@ -1,5 +1,5 @@
 " use python3
-let g:python3_host_prog = expand('/usr/local/bin/python3')
+let g:python3_host_prog = expand("$HOME/.vim/nvim/runtime/.venv/bin/python")
 " load dein
 runtime! bundles/dein/dein.vim
 
