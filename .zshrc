@@ -71,3 +71,21 @@ eval "$(nodenv init -)"
 # Java
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Haskell
+# stack のいろいろがここにインストールされるらしい
+export PATH="$HOME/.local/bin:$PATH"
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+eval "$(stack --bash-completion-script stack)"
+
+# Go
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# GitHub
+eval "$(gh completion -s zsh)"
+
