@@ -47,6 +47,9 @@ alias cot='open -a CotEditor'
 alias vsc='open -a "Visual Studio Code"'
 alias gl='cd $(ghq root)/$(ghq list | fzf)'
 
+# common
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
@@ -60,9 +63,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 ## Poetry
 export PATH="$HOME/.poetry/bin:$PATH"
-
-# neovim
-export XDG_CONFIG_HOME='~/.vim'
 
 # node.js
 export PATH="~/.nodenv/shims:$PATH"

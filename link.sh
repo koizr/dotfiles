@@ -16,6 +16,8 @@ for f in .??*; do
     ln -snfv "$BASE_DIR"/"$f" ~/
 done
 
+# Neovim
+ln -snfv "$BASE_DIR"/nvim "$XDG_CONFIG_HOME"/nvim
 # VS Code
 VSCODE_DIR="$HOME/Library/Application Support/Code/User/"
 ln -snfv "$BASE_DIR"/vscode/settings.json "$VSCODE_DIR"

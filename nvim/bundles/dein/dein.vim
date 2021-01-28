@@ -16,7 +16,7 @@ if dein#load_state(s:dein_dir)
 
     call dein#begin(s:dein_dir)
 
-    let g:config_dir = expand('~/.vim/nvim/bundles/dein')
+    let g:config_dir = expand('~/.config/nvim/bundles/dein')
     let s:dein_toml = g:config_dir . '/dein.toml'
     let s:dein_lazy_toml = g:config_dir . '/dein_lazy.toml'
 
