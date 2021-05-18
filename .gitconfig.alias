@@ -24,7 +24,7 @@
     gu = !git g --untracked
     unstage = reset --soft HEAD
     discard = reset --hard HEAD
-    prid = "!gh pr list | fzf | sed -E \"s/^#([0-9]+).*/\\1/\""
+    prid = "!gh pr list | fzf | sed -E \"s/^([0-9]+).*/\\1/\""
     pr = "!gh pr view $(git prid)"
     prc = "!gh pr checkout $(git prid)"
 
