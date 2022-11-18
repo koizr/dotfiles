@@ -12,7 +12,7 @@ set diff-context = 5
 ## fetch
 bind main F !git fetch --prune
 ## コミットハッシュをクリップボードへ
-bind main Y @sh -c "echo %(commit) | pbcopy"
+bind main Y @zsh -c "echo -n %(commit) | pbcopy"
 # 紛らわしいキーバインドを解除
 bind generic G none
 bind generic g move-first-line
