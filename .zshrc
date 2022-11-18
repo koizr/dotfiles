@@ -46,6 +46,7 @@ alias vim='nvim'
 alias cot='open -a CotEditor'
 alias vsc='open -a "Visual Studio Code"'
 alias gl='cd $(ghq root)/$(ghq list | fzf)'
+alias pokemon='curl -s -L "https://raw.githubusercontent.com/shinya/pokemon-terminal-art/main/hello.sh" | bash'
 
 # common
 export XDG_CONFIG_HOME="$HOME/.config"
