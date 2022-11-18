@@ -2,7 +2,5 @@
 .DS_Store
 .idea/
 .vscode/
-
-# python
-.python-version
-__pycache__/
+!.vscode/extensions.json
+*.code-workspace
