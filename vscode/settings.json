@@ -11,17 +11,18 @@
   "workbench.colorCustomizations": {
     // status bar
     "statusBar.foreground": "#5eb1ff",
-    "activityBar.foreground": "#5eb1ff"
+    "activityBar.foreground": "#5eb1ff",
+    "editorStickyScroll.background": "#414852",
+    "editorStickyScrollHover.background": "#166db9"
   },
   // editor
   "editor.renderControlCharacters": true,
   "files.trimTrailingWhitespace": true,
-  "editor.minimap.enabled": false,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "editor.scrollBeyondLastLine": false,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.fontFamily": "'Fira Code', 'Ricty Powerline', Menlo, 'Osaka-Mono', Monaco, 'Courier New', monospace",
@@ -42,38 +43,39 @@
   "vim.easymotionMarkerBackgroundColor": "rgba(250, 250, 250, 0.8)",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<Esc>"
-      ],
-      "commands": [
-        ":nohl"
-      ]
+      "before": ["<Esc>"],
+      "commands": [":nohl"]
     },
     {
-      "before": [
-        "s"
-      ],
-      "after": [
-        "<leader>",
-        "<leader>",
-        "s"
-      ]
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "s"]
     }
   ],
-  // emmet
-  "emmet.includeLanguages": {
-    "vue-html": "html"
-  },
-  "emmet.triggerExpansionOnTab": true,
   // terminal
   "terminal.integrated.fontFamily": "'Fira Code', 'Ricty Powerline', Menlo, 'Osaka-Mono', Monaco, 'Courier New', monospace",
   "terminal.integrated.rendererType": "dom",
   // spell
   "cSpell.userWords": [
+    "actix",
+    "browserslist",
+    "chrono",
     "circleci",
     "csrf",
+    "dotenv",
+    "eval",
+    "Fargate",
     "hspec",
+    "httpauth",
+    "Insertable",
     "koizr",
+    "Queryable",
+    "serde",
+    "sqlite",
+    "sqlx",
+    "stylelint",
+    "textlint",
+    "Ulid",
+    "usecase",
     "vuetify",
     "vuex",
     "xsrf"
@@ -82,7 +84,11 @@
   "japanese-proofreading.textlint.かっこ類と隣接する文字の間のスペースの有無": false,
   // languages
   // JavaScript
-  "npm.enableScriptExplorer": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   // Elm
   "[elm]": {
     "editor.formatOnSave": true
@@ -90,23 +96,39 @@
   // Markdown
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
-    "files.trimTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": false
   },
-  // Haskell
-  "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie",
-  "[typescript]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
+  // Yaml
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "gitlens.codeLens.scopes": ["document"]
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  "yaml.format.enable": true,
+  // Vue
   "vetur.format.defaultFormatter.ts": "none",
   "vetur.format.defaultFormatter.html": "none",
   "vetur.format.defaultFormatter.scss": "none",
-  "editor.fontSize": 13,
+  "editor.fontSize": 13.3,
   "gitlens.defaultDateShortFormat": "YYYY-MM-DD",
   "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mmZ",
-  "diffEditor.ignoreTrimWhitespace": false
+  "gitlens.currentLine.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "hediet.vscode-drawio.theme": "dark",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "literals",
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "outline.collapseItems": "alwaysCollapse",
+  "tabnine.experimentalAutoImports": true
 }
