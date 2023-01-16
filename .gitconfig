@@ -1,0 +1,89 @@
+[core]
+	editor = nvim
+
+[user]
+	name = koizr
+	email = koizumi.ryo.dev@gmail.com
+
+[gpg]
+	program = /opt/homebrew/bin/gpg
+
+[commit]
+	gpgsign = true
+
+[alias]
+	# show aliases
+	alias = !git config --list | grep alias.
+
+	# show oneline logs
+	lg = log --graph --oneline --decorate=full --all
+
+	# status
+	s = status --short --branch
+
+	# branch
+	b = branch
+	# delete selected branch with fzf
+	bd = !git branch -d $(git branch | fzf)
+	# switch selected branch with fzf
+	sw = !git switch $(git branch | fzf)
+	co = !git sw && echo 'You should use "git sw"'
+	# create branch and switch to the branch
+	new = switch -c
+	# rename current branch
+	rename = branch -m
+
+	# push to origin
+	poh = push origin HEAD
+
+	# fetch
+	f = fetch --prune
+
+	# pull
+	p = pull --prune
+
+	# commit
+	c = commit
+	# edit commit files and commif message
+	amend = commit --amend
+	# edit commit files
+	mod = commit --amend --no-edit
+	# commit as wip
+	wip = commit -m 'wip'
+
+	# reset tags in local repository
+	reset-tags = !git tag -l | xargs git tag -d && git fetch -t
+
+	# diff
+	d = diff
+	# show diff of staged files
+	ds = diff --cached
+	# show names of staged files
+	df = diff --cached --name-only
+
+	# grep
+	# --break: insert empty line before file name
+	# --heading: move file name to above matches
+	g = grep --break --heading
+	gi = !git g --ignore-case
+	gw = !git gi --word-regexp
+	# not regexp
+	gs = !git g --fixed-strings
+	# include untracked files
+	gu = !git g --untracked
+
+	# unstage all files
+	unstage = reset --soft HEAD
+	# discard all files
+	discard = reset --hard HEAD
+
+	# GitHub integration
+	# get pull request ID
+	prid = "!gh pr list | fzf | sed -E \"s/^([0-9]+).*/\\1/\""
+	# show selected pull request
+	pr = "!gh pr view $(git prid)"
+	# switch branch that is selected from pull request list
+	prc = "!gh pr checkout $(git prid)"
+
+[include]
+	path = .gitconfig.local
