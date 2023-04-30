@@ -1,7 +1,5 @@
-" use python3
-let g:python3_host_prog = expand("$XDG_CONFIG_HOME/nvim/runtime/.venv/bin/python")
-" load dein
-runtime! bundles/dein/dein.vim
+set termguicolors
+set signcolumn=yes
 
 " ====== ファイル =======
 " vi 互換モードで動作させない。互換モードはいろいろ問題がある
@@ -23,7 +21,6 @@ filetype plugin indent on
 " ====== 表示 =======
 " 行番号を表示
 set number
-set relativenumber
 " 現在の行を強調表示
 set cursorline
 " 現在の列を強調表示
@@ -34,28 +31,6 @@ set visualbell
 set showmatch
 " シンタックスハイライト
 syntax enable
-
-" ====== ステータスライン =======
-" ステータスラインを常に表示(0:表示しない、1:2つ以上ウィンドウがある時だけ表示)
-set laststatus=2
-" 入力中のコマンドをステータスに表示する
-set showcmd
-" ファイル名表示
-set statusline=%F
-" 変更チェック表示
-set statusline+=%m
-" 読み込み専用かどうか表示
-set statusline+=%r
-" ヘルプページなら[HELP]と表示
-set statusline+=%h
-" プレビューウインドウなら[Prevew]と表示
-set statusline+=%w
-" これ以降は右寄せ表示
-set statusline+=%=
-" file encoding
-set statusline+=[ENC=%{&fileencoding}]
-" 現在行数/全行数
-set statusline+=[LOW=%l/%L]
 
 " ====== 入力 =======
 " インデントはスマートインデント
@@ -105,9 +80,43 @@ nnoremap == gg= G''
 " x での削除はレジスタに保存しない
 nnoremap x "_x
 
-" ====== シンタックス ======
-autocmd BufRead,BufNewFile *.volt setfiletype twig
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
-
 " ====== clipboard ======
 set clipboard+=unnamed
+
+" ====== Plugins ======
+packadd vim-jetpack
+call jetpack#begin()
+" bootstrap
+Jetpack 'tani/vim-jetpack', { 'opt': 1 }
+" linter
+Jetpack 'https://github.com/dense-analysis/ale'
+" filer
+Jetpack 'lambdalisue/fern.vim'
+Jetpack 'lambdalisue/nerdfont.vim'
+Jetpack 'lambdalisue/fern-renderer-nerdfont.vim'
+" color scheme
+Jetpack 'EdenEast/nightfox.nvim'
+" status line
+Jetpack 'nvim-lualine/lualine.nvim'
+Jetpack 'kyazdani42/nvim-web-devicons'
+" buffer line
+Jetpack 'nvim-tree/nvim-web-devicons'
+Jetpack 'akinsho/bufferline.nvim', { 'tag': 'v3.1.0' }
+" git
+Jetpack 'lewis6991/gitsigns.nvim'
+" TODO: completion
+" TODO: lsp
+call jetpack#end()
+
+map <silent><C-q> :Fern . -reveal=%<CR>
+map <silent><C-S-q> :Fern . -drawer -toggle<CR>
+let g:fern#renderer = "nerdfont"
+
+colorscheme nightfox
+
+lua << END
+require('lualine').setup()
+require("bufferline").setup()
+require('gitsigns').setup()
+END
+
