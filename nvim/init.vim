@@ -104,6 +104,8 @@ Jetpack 'nvim-tree/nvim-web-devicons'
 Jetpack 'akinsho/bufferline.nvim', { 'tag': 'v3.1.0' }
 " git
 Jetpack 'lewis6991/gitsigns.nvim'
+" syntax highlight
+Jetpack 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 " TODO: completion
 " TODO: lsp
 call jetpack#end()
