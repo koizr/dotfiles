@@ -8,7 +8,6 @@ alias ll='ls -laG'
 alias gl='cd $(ghq root)/$(ghq list | fzf)'
 alias vi='vim'
 alias vim='nvim'
-alias pn='pnpm'
 
 # zsh
 ### Added by Zinit's installer
@@ -51,3 +50,5 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 # GitHub
 eval "$(gh completion -s zsh)"
 
+# mise
+eval "$(mise activate zsh)"

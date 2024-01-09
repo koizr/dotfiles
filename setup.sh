@@ -21,7 +21,7 @@ brew install --cask \
     1password \
     google-japanese-ime \
     clipy \
-    alfred \
+    raycast \
     karabiner-elements \
     keepingyouawake \
     iterm2 \
