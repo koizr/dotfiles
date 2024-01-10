@@ -1,13 +1,15 @@
 export LANG="ja_JP.UTF-8"
 export EDITOR="nvim"
-
 export XDG_CONFIG_HOME="$HOME/.config"
 
-
+# aliases
 alias ll='ls -laG'
 alias gl='cd $(ghq root)/$(ghq list | fzf)'
 alias vi='vim'
 alias vim='nvim'
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # zsh
 ### Added by Zinit's installer
@@ -41,14 +43,19 @@ zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
 # prompt
 eval "$(starship init zsh)"
 
-
-
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 
 # GitHub
-eval "$(gh completion -s zsh)"
+if type gh &>/dev/null; then
+    eval "$(gh completion -s zsh)"
+fi
 
 # mise
-eval "$(mise activate zsh)"
+if type mise &>/dev/null; then
+    eval "$(mise activate zsh)"
+fi
+
+# Rust
+[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
