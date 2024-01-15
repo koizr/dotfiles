@@ -55,6 +55,7 @@ fi
 # mise
 if type mise &>/dev/null; then
     eval "$(mise activate zsh)"
+    export PATH="$HOME/.local/share/mise/shims:$PATH"
 fi
 
 # Rust
