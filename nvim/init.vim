@@ -106,12 +106,14 @@ Jetpack 'akinsho/bufferline.nvim', { 'tag': 'v3.1.0' }
 Jetpack 'lewis6991/gitsigns.nvim'
 " syntax highlight
 Jetpack 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+" code jump
+Jetpack 'phaazon/hop.nvim', { 'branch': 'v2' }
 " TODO: completion
 " TODO: lsp
 call jetpack#end()
 
-map <silent><C-q> :Fern . -reveal=%<CR>
-map <silent><C-S-q> :Fern . -drawer -toggle<CR>
+nnoremap <silent><C-q> :Fern . -reveal=%<CR>
+nnoremap <silent><C-S-q> :Fern . -drawer -toggle<CR>
 let g:fern#renderer = "nerdfont"
 
 colorscheme nightfox
@@ -120,5 +122,8 @@ lua << END
 require('lualine').setup()
 require("bufferline").setup()
 require('gitsigns').setup()
+require('hop').setup()
 END
 
+nnoremap s :HopChar1<CR>
+nnoremap <S-s> :HopPattern<CR>
