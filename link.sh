@@ -16,7 +16,7 @@ for f in .??*; do
 done
 
 # Neovim
-ln -snfv "$BASE_DIR"/nvim "$XDG_CONFIG_HOME"/nvim
+ln -snfv "$BASE_DIR"/nvim "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
 # git
 ln -snfv "$BASE_DIR"/git "${XDG_CONFIG_HOME:-$HOME/.config}"/git
