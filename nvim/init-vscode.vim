@@ -65,3 +65,19 @@ nnoremap x "_x
 
 " ====== clipboard ======
 set clipboard+=unnamed
+
+" ====== Plugins ======
+packadd vim-jetpack
+call jetpack#begin()
+" bootstrap
+Jetpack 'tani/vim-jetpack', { 'opt': 1 }
+" code jump
+Jetpack 'phaazon/hop.nvim', { 'branch': 'v2' }
+call jetpack#end()
+
+lua << END
+require('hop').setup()
+END
+
+nnoremap s :HopChar1<CR>
+nnoremap <S-s> :HopPattern<CR>
