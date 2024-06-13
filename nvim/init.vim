@@ -99,7 +99,7 @@ Jetpack 'nvim-lualine/lualine.nvim'
 Jetpack 'kyazdani42/nvim-web-devicons'
 " buffer line
 Jetpack 'nvim-tree/nvim-web-devicons'
-Jetpack 'akinsho/bufferline.nvim', { 'tag': 'v3.1.0' }
+Jetpack 'akinsho/bufferline.nvim', { 'tag': 'v4.6.1' }
 " git
 Jetpack 'lewis6991/gitsigns.nvim'
 " syntax highlight
