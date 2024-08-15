@@ -21,6 +21,9 @@ ln -snfv "$BASE_DIR"/nvim "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 # git
 ln -snfv "$BASE_DIR"/git "${XDG_CONFIG_HOME:-$HOME/.config}"/git
 
+# gitui
+ln -snfv "$BASE_DIR"/gitui "${XDG_CONFIG_HOME:-$HOME/.config}"/gitui
+
 # Starship
 ln -snfv "$BASE_DIR"/starship.toml "${XDG_CONFIG_HOME:-$HOME/.config}"/starship.toml
 

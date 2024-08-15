@@ -1,0 +1,9 @@
+(
+    home: Some("Home"),
+    end: Some("End"),
+    page_up: Some("PageUp"),
+    page_down: Some("PageDown"),
+    delete: Some("DEL"),
+    insert: Some("INS"),
+    esc: Some("ESC")
+)

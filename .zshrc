@@ -7,6 +7,7 @@ alias ll='ls -laG'
 alias gl='cd $(ghq root)/$(ghq list | fzf)'
 alias vi='vim'
 alias vim='nvim'
+alias g=gitui
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"

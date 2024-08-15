@@ -11,7 +11,7 @@ brew install \
     gnupg pinentry-mac \
     fzf \
     tmux tmuxinator \
-    git tig ghq gh \
+    git gitui tig ghq gh \
     neovim \
     tree
 
