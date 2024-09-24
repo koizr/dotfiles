@@ -1,3 +1,6 @@
+# 先頭スペースのコマンドは履歴に保存しない
+setopt hist_ignore_space
+
 export LANG="ja_JP.UTF-8"
 export EDITOR="nvim"
 export XDG_CONFIG_HOME="$HOME/.config"
