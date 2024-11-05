@@ -52,7 +52,7 @@ eval "$(starship init zsh)"
 
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
+source <(fzf --zsh)
 
 # GitHub
 if type gh &>/dev/null; then
