@@ -73,6 +73,7 @@ vim.o.hlsearch = true
 vim.keymap.set('n', '<Esc><Esc>', ':nohlsearch<CR><Esc>', { noremap = true, silent = true })
 
 -- ====== キーマップ設定 ======
+vim.g.mapleader = " "
 vim.keymap.set('n', '<C-n>', ':bn<CR>', { noremap = true })
 vim.keymap.set('n', '<C-p>', ':bp<CR>', { noremap = true })
 vim.keymap.set('n', '<S-h>', '^', { noremap = true })

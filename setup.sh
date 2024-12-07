@@ -10,6 +10,7 @@ brew install \
     wget \
     gnupg pinentry-mac \
     fzf \
+    ripgrep \
     tmux tmuxinator \
     git gitui tig ghq gh \
     neovim \
