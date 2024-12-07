@@ -85,4 +85,8 @@ vim.keymap.set('n', 'x', '"_x', { noremap = true })
 vim.o.clipboard = "unnamedplus"
 
 -- ====== プラグイン読み込み ======
-require("config.lazy")
+if vim.g.vscode then
+    require("config.lazy-vscode")
+else
+    require("config.lazy")
+end
