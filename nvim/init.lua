@@ -85,31 +85,31 @@ vim.o.clipboard = "unnamedplus"
 
 -- ====== プラグイン設定 ======
 -- Jetpackを使ってプラグイン管理
-vim.cmd([[packadd vim-jetpack]])
+vim.cmd('packadd vim-jetpack')
 require('jetpack.packer').startup(function(use)
     -- bootstrap
-  use 'tani/vim-jetpack'
-  -- Linter
-  use 'dense-analysis/ale'
-  -- Filer
-  use 'lambdalisue/fern.vim'
-  use 'lambdalisue/nerdfont.vim'
-  use 'lambdalisue/fern-renderer-nerdfont.vim'
-  -- Color scheme
-  use 'EdenEast/nightfox.nvim'
-  -- Status line
-  use 'nvim-lualine/lualine.nvim'
-  use 'kyazdani42/nvim-web-devicons'
-  -- Buffer line
-  use 'akinsho/bufferline.nvim'
-  -- Git
-  use 'lewis6991/gitsigns.nvim'
-  -- Syntax highlight
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  -- Code jump
-  use { 'phaazon/hop.nvim', branch = 'v2' }
-  -- TODO: completion
-  -- TODO: lsp
+    use 'tani/vim-jetpack'
+    -- Linter
+    use 'dense-analysis/ale'
+    -- Filer
+    use 'lambdalisue/fern.vim'
+    use 'lambdalisue/nerdfont.vim'
+    use 'lambdalisue/fern-renderer-nerdfont.vim'
+    -- Color scheme
+    use 'EdenEast/nightfox.nvim'
+    -- Status line
+    use 'nvim-lualine/lualine.nvim'
+    use 'kyazdani42/nvim-web-devicons'
+    -- Buffer line
+    use 'akinsho/bufferline.nvim'
+    -- Git
+    use 'lewis6991/gitsigns.nvim'
+    -- Syntax highlight
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    -- Code jump
+    use { 'phaazon/hop.nvim', branch = 'v2' }
+    -- TODO: completion
+    -- TODO: lsp
 end)
 
 -- プラグイン設定のロード
