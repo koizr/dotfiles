@@ -24,7 +24,6 @@ return {
                     "luap",
                     "markdown",
                     "markdown_inline",
-                    "printf",
                     "regex",
                     "rust",
                     "toml",
