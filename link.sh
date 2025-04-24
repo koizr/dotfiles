@@ -24,6 +24,9 @@ ln -snfv "$BASE_DIR"/git "${XDG_CONFIG_HOME:-$HOME/.config}"/git
 # gitui
 ln -snfv "$BASE_DIR"/gitui "${XDG_CONFIG_HOME:-$HOME/.config}"/gitui
 
+# Wezterm
+ln -snfv "$BASE_DIR"/wezterm "${XDG_CONFIG_HOME:-$HOME/.config}"/wezterm
+
 # Starship
 ln -snfv "$BASE_DIR"/starship.toml "${XDG_CONFIG_HOME:-$HOME/.config}"/starship.toml
 
