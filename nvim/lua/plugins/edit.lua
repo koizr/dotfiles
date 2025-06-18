@@ -6,8 +6,8 @@ return {
             keys = "etovxqpdygfblzhckisuran",
         },
         keys = {
-            { "s", "<CMD>HopChar1<CR>", desc = "Hop char" },
-            { "<S-s>", "<CMD>HopPattern<CR>", desc = "Hop pattern" },
+            { "s", "<CMD>silent HopChar1<CR>", desc = "Hop char" },
+            { "<S-s>", "<CMD>silent HopPattern<CR>", desc = "Hop pattern" },
         },
     },
     {
