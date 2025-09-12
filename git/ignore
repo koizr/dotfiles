@@ -2,3 +2,5 @@
 .DS_Store
 .vscode/settings.json
 .idea
+
+**/.claude/settings.local.json
