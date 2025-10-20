@@ -11,6 +11,9 @@
 [commit]
 	gpgsign = true
 
+[tag]
+#	gpgsign = true
+
 [alias]
 	# show aliases
 	alias = !git config --list | grep alias.
