@@ -88,6 +88,11 @@
 	# switch branch that is selected from pull request list
 	prc = "!gh pr checkout $(git prid)"
 
+	# get pull requests (review requested)
+	prid-review = "!gh pr list --search 'user-review-requested:@me' | fzf | sed -E \"s/^([0-9]+).*/\\1/\""
+	# switch to the branch is selected from my review needed pull request list
+	prr = "!gh pr checkout $(git prid-review)"
+
 [include]
 	path = .gitconfig.local
 [init]
