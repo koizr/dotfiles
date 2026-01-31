@@ -1,3 +1,5 @@
+-- https://zenn.dev/ras96/articles/4d9d9493d29c06
+
 vim.lsp.enable({
     -- nvim-lspconfig で"lua_ls"という名前で設定したプリセットが読まれる
     -- https://github.com/neovim/nvim-lspconfig/blob/master/lsp/lua_ls.lua
