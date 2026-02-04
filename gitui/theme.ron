@@ -1,3 +1,8 @@
+// ref: https://github.com/gitui-org/gitui/blob/master/src/ui/style.rs
 (
+    use_selection_fg: Some(false),
+    selection_bg: Some("#585f5f"),
+    commit_hash: Some("#b7bdf8"),
+    commit_author: Some("#7dc4e4"),
     line_break: Some(""),
 )
