@@ -87,6 +87,16 @@ vim.o.clipboard = "unnamedplus"
 -- ====== 補完 ======
 vim.opt.completeopt = { "menuone", "noselect", "noinsert", "fuzzy", "preview" }
 
+-- ====== yank 時にハイライト ======
+vim.api.nvim_create_autocmd('TextYankPost', {
+    callback = function()
+        vim.hl.on_yank({
+            timeout = 100
+        })
+    end,
+    desc = "Highlight yanked text",
+})
+
 -- ====== プラグイン読み込み ======
 if vim.g.vscode then
     require("config.lazy-vscode")
