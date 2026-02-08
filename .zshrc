@@ -52,6 +52,8 @@ zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
 # prompt
 eval "$(starship init zsh)"
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 source <(fzf --zsh)
