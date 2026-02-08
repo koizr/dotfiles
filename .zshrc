@@ -71,3 +71,11 @@ fi
 
 # Rust
 [ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+
+# OCaml
+if type opam &>/dev/null; then
+    [[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
+    eval $(opam env)
+    eval $(opam config env)
+fi
+
