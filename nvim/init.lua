@@ -84,9 +84,13 @@ vim.keymap.set('n', 'x', '"_x', { noremap = true })
 -- ====== クリップボード設定 ======
 vim.o.clipboard = "unnamedplus"
 
+-- ====== 補完 ======
+vim.opt.completeopt = { "menuone", "noselect", "noinsert", "fuzzy", "preview" }
+
 -- ====== プラグイン読み込み ======
 if vim.g.vscode then
     require("config.lazy-vscode")
 else
     require("config.lazy")
+    require("config.lsp")
 end
