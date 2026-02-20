@@ -11,7 +11,6 @@ alias gl='cd $(ghq root)/$(ghq list | fzf)'
 alias vi='vim'
 alias vim='nvim'
 alias g=gitui
-alias gp='tmux popup -E -w80% -h95% gitui'
 alias docker-clean='docker system prune --volumes'
 
 # Homebrew
