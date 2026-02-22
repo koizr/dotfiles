@@ -1,7 +1,7 @@
 vim.o.termguicolors = true
 vim.o.signcolumn = "yes"
 
-vim.opt.helplang = 'ja', 'en'
+vim.opt.helplang = "ja"
 
 -- ====== ファイル設定 ======
 -- vi互換モードをオフ
@@ -70,16 +70,14 @@ vim.o.wrapscan = true
 -- 検索語をハイライト表示
 vim.o.hlsearch = true
 -- ESC連打で検索ハイライト解除
-vim.keymap.set('n', '<Esc><Esc>', ':nohlsearch<CR><Esc>', { noremap = true, silent = true })
+vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { noremap = true, silent = true })
 
 -- ====== キーマップ設定 ======
 vim.g.mapleader = " "
-vim.keymap.set('n', '<C-n>', ':bn<CR>', { noremap = true })
-vim.keymap.set('n', '<C-p>', ':bp<CR>', { noremap = true })
-vim.keymap.set('n', '<S-h>', '^', { noremap = true })
-vim.keymap.set('n', '<S-l>', '$', { noremap = true })
+vim.keymap.set("n", "<C-n>", ":bn<CR>", { noremap = true })
+vim.keymap.set("n", "<C-p>", ":bp<CR>", { noremap = true })
 -- xでの削除はレジスタに保存しない
-vim.keymap.set('n', 'x', '"_x', { noremap = true })
+vim.keymap.set("n", "x", '"_x', { noremap = true })
 
 -- ====== クリップボード設定 ======
 vim.o.clipboard = "unnamedplus"
@@ -87,20 +85,5 @@ vim.o.clipboard = "unnamedplus"
 -- ====== 補完 ======
 vim.opt.completeopt = { "menuone", "noselect", "noinsert", "fuzzy", "preview" }
 
--- ====== yank 時にハイライト ======
-vim.api.nvim_create_autocmd('TextYankPost', {
-    callback = function()
-        vim.hl.on_yank({
-            timeout = 100
-        })
-    end,
-    desc = "Highlight yanked text",
-})
-
 -- ====== プラグイン読み込み ======
-if vim.g.vscode then
-    require("config.lazy-vscode")
-else
-    require("config.lazy")
-    require("config.lsp")
-end
+require("config.lazy")
