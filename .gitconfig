@@ -1,9 +1,13 @@
 [core]
 	editor = nvim
+  pager = delta
 
 [user]
 	name = koizr
 	email = koizumi.ryo.dev@gmail.com
+
+[init]
+	defaultBranch = main
 
 [gpg]
 	program = /opt/homebrew/bin/gpg
@@ -13,6 +17,18 @@
 
 [tag]
 #	gpgsign = true
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  dark = true
+  side-by-side = true
+  line-numbers = true
+
+[merge]
+  conflictStyle = zdiff3
 
 [alias]
 	# show aliases
@@ -95,5 +111,4 @@
 
 [include]
 	path = .gitconfig.local
-[init]
-	defaultBranch = main
+

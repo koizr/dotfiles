@@ -3,16 +3,19 @@
 set -eu
 
 # このファイルが実行されているディレクトリ
-BASE_DIR=$(cd $(dirname $0); pwd)
+BASE_DIR=$(
+  cd $(dirname $0)
+  pwd
+)
 
 cd $BASE_DIR
 
 echo "start link..."
 for f in .??*; do
-    [ "$f" = ".git" ] && continue
-    [ "$f" = ".DS_Store" ] && continue
+  [ "$f" = ".git" ] && continue
+  [ "$f" = ".DS_Store" ] && continue
 
-    ln -snfv "${BASE_DIR%/}/${f}" ~/
+  ln -snfv "${BASE_DIR%/}/${f}" ~/
 done
 
 # Neovim
@@ -23,6 +26,9 @@ ln -snfv "$BASE_DIR"/git "${XDG_CONFIG_HOME:-$HOME/.config}"/git
 
 # gitui
 ln -snfv "$BASE_DIR"/gitui "${XDG_CONFIG_HOME:-$HOME/.config}"/gitui
+
+# lazygit
+ln -snfv "$BASE_DIR"/lazygit "${XDG_CONFIG_HOME:-$HOME/.config}"/lazygit
 
 # Wezterm
 ln -snfv "$BASE_DIR"/wezterm "${XDG_CONFIG_HOME:-$HOME/.config}"/wezterm

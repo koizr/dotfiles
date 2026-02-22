@@ -7,29 +7,30 @@ set -eu
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install \
-    wget \
-    gnupg pinentry-mac \
-    fzf \
-    ripgrep \
-    tmux tmuxinator \
-    git gitui tig ghq gh \
-    neovim \
-    tree
+  wget tree \
+  gnupg pinentry-mac \
+  fzf \
+  ripgrep fd \
+  tmux tmuxinator \
+  git lazygit ghq gh git-delta \
+  neovim \
+  tree-sitter \
+  mise \
+  starship
 
 brew tap genkiroid/homebrew-cert && brew install cert
 
 brew install --cask \
-    1password \
-    google-japanese-ime \
-    clipy \
-    raycast \
-    karabiner-elements \
-    keepingyouawake \
-    iterm2 \
-    docker \
-    visual-studio-code \
-    jetbrains-toolbox \
-    google-chrome firefox
+  1password \
+  google-japanese-ime \
+  raycast \
+  karabiner-elements \
+  keepingyouawake \
+  wezterm \
+  docker \
+  visual-studio-code \
+  jetbrains-toolbox \
+  google-chrome firefox
 
 # zsh
 # https://github.com/zdharma-continuum/zinit#automatic
