@@ -1,7 +1,7 @@
 return {
-    {
-        "mvllow/modes.nvim",
-        version = "*",
-        opts = {},
-    }
+  {
+    "mvllow/modes.nvim",
+    version = "*",
+    opts = {},
+  },
 }
