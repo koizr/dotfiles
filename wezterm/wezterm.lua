@@ -1,19 +1,17 @@
 -- @see https://wezfurlong.org/wezterm/config/files.html
 
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-
 -- Font
-config.font = wezterm.font_with_fallback {
-    'FiraCode Nerd Font Mono',
-}
+config.font = wezterm.font_with_fallback({
+	"FiraCode Nerd Font Mono",
+	"UDEV Gothic 35NFLG",
+})
 config.font_size = 13
 
-
 -- Color scheme
-config.color_scheme = 'BlulocoDark'
-
+config.color_scheme = "BlulocoDark"
 
 -- Key bindings
 config.leader = { key = 't', mods = 'CTRL', timeout_milliseconds = 1000 }
