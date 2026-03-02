@@ -1,16 +1,5 @@
 return {
   {
-    "smoka7/hop.nvim",
-    version = "*",
-    opts = {
-      keys = "etovxqpdygfblzhckisuran",
-    },
-    keys = {
-      { "s", "<CMD>silent HopChar1<CR>", desc = "Hop char" },
-      { "<S-s>", "<CMD>silent HopPattern<CR>", desc = "Hop pattern" },
-    },
-  },
-  {
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
