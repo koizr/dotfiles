@@ -19,3 +19,7 @@ vim.keymap.set("v", "<leader>yL", function()
   vim.fn.setreg("+", text)
   vim.notify("Copied: " .. text)
 end, { desc = "Copy file path:line-range to clipboard" })
+
+vim.keymap.set("n", "<leader>fa", function()
+  Snacks.explorer.reveal()
+end, { desc = "Reveal current file in explorer" })
