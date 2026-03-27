@@ -4,3 +4,7 @@
 
 vim.opt.relativenumber = false
 vim.opt.spelllang = { "en", "cjk" }
+
+-- LazyVim のデフォルトは 2 だが、
+-- 勝手に記号を隠されると困るのでオフにする。
+vim.opt.conceallevel = 0
