@@ -13,6 +13,7 @@ return {
           },
           explorer = {
             include = { "node_modules" },
+            follow_file = false,
           },
         },
       },
