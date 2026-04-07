@@ -87,3 +87,16 @@ vim.opt.completeopt = { "menuone", "noselect", "noinsert", "fuzzy", "preview" }
 
 -- ====== プラグイン読み込み ======
 require("config.lazy")
+
+if LazyVim and LazyVim.config and LazyVim.config.kind_filter ~= false then
+  local extra_kinds = { "Constant", "Variable" }
+  for _, filter in pairs(LazyVim.config.kind_filter or {}) do
+    if type(filter) == "table" then
+      for _, kind in ipairs(extra_kinds) do
+        if not vim.tbl_contains(filter, kind) then
+          table.insert(filter, kind)
+        end
+      end
+    end
+  end
+end
