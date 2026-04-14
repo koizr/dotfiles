@@ -4,15 +4,14 @@ return {
     opts = {
       picker = {
         hidden = true,
-        ignored = true,
+        include = { ".env", ".env.local" },
         exclude = { ".git", "node_modules", ".DS_Store" },
         sources = {
           files = {
             hidden = true,
-            ignored = true,
           },
           explorer = {
-            include = { "node_modules" },
+            ignore = true,
             follow_file = false,
           },
         },
