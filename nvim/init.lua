@@ -46,11 +46,9 @@ vim.o.backspace = "indent,eol,start"
 -- 不可視文字を可視化
 vim.o.list = true
 -- タブを可視化 (タブを「|_」と表示)
-vim.o.listchars = "tab:|\\_"
+vim.opt.listchars = { tab = "|_" }
 -- Tabキーを押した時にスペースを入力
 vim.o.expandtab = true
--- タブの表示幅
-vim.o.tabstop = 4
 -- 自動インデント時のスペース数
 vim.o.shiftwidth = 4
 -- タブキーで入力するスペース数
