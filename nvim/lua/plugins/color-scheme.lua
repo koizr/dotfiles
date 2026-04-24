@@ -6,6 +6,12 @@ return {
     name = "catppuccin",
     opts = {
       flavour = "macchiato",
+      custom_highlights = function(colors)
+        return {
+          ["@lsp.mod.mutable.rust"] = { underline = true, sp = colors.overlay1 },
+          ["@lsp.mod.consuming.rust"] = { italic = true },
+        }
+      end,
       lsp_styles = {
         underlines = {
           errors = { "undercurl" },
