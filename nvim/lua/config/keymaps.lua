@@ -23,3 +23,5 @@ end, { desc = "Copy file path:line-range to clipboard" })
 vim.keymap.set("n", "<leader>fa", function()
   Snacks.explorer.reveal()
 end, { desc = "Reveal current file in explorer" })
+
+vim.keymap.set("n", "q", "<Nop>", { silent = true })
