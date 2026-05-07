@@ -11,7 +11,7 @@ alias gl='cd $(ghq root)/$(ghq list | fzf)'
 alias vi='vim'
 alias vim='nvim'
 alias g=lazygit
-alias docker-clean='docker system prune --volumes'
+alias docker-clean='docker system prune --volumes --all --force'
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -78,3 +78,6 @@ if type opam &>/dev/null; then
     eval $(opam config env)
 fi
 
+if type go &>/dev/null; then
+   export PATH="$(go env GOPATH)/bin:$PATH"
+fi
