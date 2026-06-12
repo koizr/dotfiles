@@ -4,7 +4,7 @@ return {
     opts = {
       picker = {
         hidden = true,
-        include = { ".env", ".env.local" },
+        include = { ".env", ".env.local", "mise.local.toml" },
         exclude = { ".git", "node_modules", ".DS_Store" },
         sources = {
           files = {
