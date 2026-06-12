@@ -5,6 +5,7 @@ return {
       servers = {
         vtsls = {
           settings = {
+            typos_lsp = {},
             typescript = {
               inlayHints = {
                 variableTypes = { enabled = true },
