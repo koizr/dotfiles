@@ -45,8 +45,8 @@ vim.o.backspace = "indent,eol,start"
 -- ====== タブ設定 ======
 -- 不可視文字を可視化
 vim.o.list = true
--- タブを可視化 (タブを「|_」と表示)
-vim.opt.listchars = { tab = "|_" }
+-- タブを可視化 (タブを `__` と表示)
+vim.opt.listchars = { tab = "__" }
 -- Tabキーを押した時にスペースを入力
 vim.o.expandtab = true
 -- 自動インデント時のスペース数
@@ -72,8 +72,6 @@ vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { noremap = true, sile
 
 -- ====== キーマップ設定 ======
 vim.g.mapleader = " "
-vim.keymap.set("n", "<C-n>", ":bn<CR>", { noremap = true })
-vim.keymap.set("n", "<C-p>", ":bp<CR>", { noremap = true })
 -- xでの削除はレジスタに保存しない
 vim.keymap.set("n", "x", '"_x', { noremap = true })
 
